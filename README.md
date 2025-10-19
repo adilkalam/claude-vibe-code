@@ -13,7 +13,7 @@ This reference documents a comprehensive Claude Code setup optimized for "vibe c
 
 ### Agents
 
-Specialized AI assistants with specific expertise (e.g., frontend-developer, code-reviewer). 
+Specialized AI assistants with specific expertise (e.g., frontend-developer, code-reviewer).
 
 - Invoked using the Task tool in Claude Code
 - Handle specific jobs with focused expertise
@@ -173,7 +173,7 @@ Helps you organize and manage multiple AI agents working together.
 - Keeps track of which agents are doing what
 - Coordinates efforts when running multiple specialized agents on complex tasks
 
-**Model:** Sonnet  
+**Model:** Sonnet
 **Use Case:** Coordinating multiple agents for complex workflows
 
 ```bash
@@ -190,7 +190,7 @@ Your friendly coding mentor with personality.
 - Helps you improve your skills with conversational, supportive approach
 - Avoids dry technical explanations
 
-**Model:** Sonnet  
+**Model:** Sonnet
 **Use Case:** Personalized coding guidance and mentorship
 
 ```bash
@@ -209,7 +209,7 @@ Your expert prompt architect using the most powerful model.
 - Includes implementation notes
 - Optimizes for specific models (Claude, GPT, open source)
 
-**Model:** Opus (highest reasoning)  
+**Model:** Opus (highest reasoning)
 **Use Case:** Crafting and optimizing prompts for AI systems
 
 ```bash
@@ -225,7 +225,7 @@ Optimizes how context is used and managed across your conversations.
 - Ensures important information is preserved
 - Keeps information accessible when needed
 
-**Model:** Sonnet  
+**Model:** Sonnet
 **Use Case:** Managing conversation context and memory
 
 ```bash
@@ -245,7 +245,7 @@ The core plugin that provides the entire Superpowers skills ecosystem.
   - Planning tools
   - Collaborative development patterns
 
-**Status:** ENABLED  
+**Status:** ENABLED
 **Provides:** 10 skills for systematic development
 
 ```bash
@@ -262,7 +262,7 @@ Your mandatory starting point for any task.
 - Ensures you check if there's already a proven approach
 - Process: Read → Announce → Follow
 
-**Framework:** Mandatory skill discovery  
+**Framework:** Mandatory skill discovery
 **Triggers:** EVERY task (starting point)
 
 #### → Skill: subagent-driven-development
@@ -273,7 +273,7 @@ Automatically dispatches fresh subagents to handle individual tasks from your pl
 - Enables fast iteration while maintaining quality
 - Each task gets a fresh perspective and review before moving to the next
 
-**Framework:** Task delegation with quality gates  
+**Framework:** Task delegation with quality gates
 **Triggers:** Executing implementation plans with independent tasks
 
 #### → Skill: dispatching-parallel-agents
@@ -284,7 +284,7 @@ Launches multiple agents simultaneously to investigate different problems.
 - Parallelizes problem-solving for much faster resolution
 - Avoids debugging issues one at a time
 
-**Framework:** Concurrent investigation  
+**Framework:** Concurrent investigation
 **Triggers:** Facing 3+ independent failures
 
 #### → Skill: writing-skills
@@ -295,7 +295,7 @@ Applies test-driven development methodology to creating Claude skills.
 - Write instructions that close those gaps
 - Creates skills that actually work under pressure
 
-**Framework:** TDD for process documentation  
+**Framework:** TDD for process documentation
 **Use Case:** Creating bulletproof Claude skills
 
 #### → Skill: testing-skills-with-subagents
@@ -309,7 +309,7 @@ Runs your skills through actual subagent sessions to verify they work.
   4. Refine
 - Ensures skills are bulletproof before deployment
 
-**Framework:** RED-GREEN-REFACTOR for skills  
+**Framework:** RED-GREEN-REFACTOR for skills
 **Use Case:** Validating skills resist rationalization
 
 #### → Skill: sharing-skills
@@ -320,7 +320,7 @@ Guides you through contributing your skill back to the community.
 - Creates pull request to upstream repository
 - Makes it easy to share what you've created
 
-**Framework:** Git PR workflow  
+**Framework:** Git PR workflow
 **Use Case:** Contributing skills to upstream repositories
 
 #### → Skill: commands
@@ -330,7 +330,7 @@ Provides utilities and helpers for command-line workflows.
 - Streamlines common command-line operations
 - Automates repetitive tasks
 
-**Framework:** Command utilities  
+**Framework:** Command utilities
 **Use Case:** Command-line workflow automation
 
 #### → Skill: brainstorming
@@ -343,8 +343,8 @@ Refines rough ideas into fully-formed designs through structured questioning.
   - Incrementally refine your concept
 - Prevents building the wrong thing by ensuring the design is solid first
 
-**Framework:** Socratic method for design refinement  
-**Triggers:** Before writing code or implementation plans  
+**Framework:** Socratic method for design refinement
+**Triggers:** Before writing code or implementation plans
 **Slash Command:** `/superpowers:brainstorm`
 
 #### → Skill: writing-plans
@@ -358,8 +358,8 @@ Creates detailed, step-by-step implementation plans.
   - Expected outcomes
 - Designed for engineers with zero codebase context
 
-**Framework:** Comprehensive implementation planning  
-**Triggers:** When design is complete  
+**Framework:** Comprehensive implementation planning
+**Triggers:** When design is complete
 **Slash Command:** `/superpowers:write-plan`
 
 #### → Skill: executing-plans
@@ -370,8 +370,8 @@ Loads a complete plan, reviews it critically, then executes tasks in controlled 
 - Ensures quality and correctness
 - Pauses for review rather than blindly executing everything
 
-**Framework:** Batch execution with review checkpoints  
-**Triggers:** When given a complete implementation plan  
+**Framework:** Batch execution with review checkpoints
+**Triggers:** When given a complete implementation plan
 **Slash Command:** `/superpowers:execute-plan`
 
 ### claude-mem@thedotmack
@@ -389,7 +389,7 @@ Advanced memory system that remembers everything across sessions.
   - Full-text search
 - Uses SQLite with FTS5 for fast searching
 
-**Status:** ENABLED  
+**Status:** ENABLED
 **Provides:** Persistent memory with full-text search, 6 MCP search tools
 
 ```bash
@@ -409,7 +409,7 @@ Enables structured, step-by-step reasoning for complex problems.
 - Provides clear logical progression
 - Instead of trying to solve everything at once
 
-**Provider:** Official @modelcontextprotocol  
+**Provider:** Official @modelcontextprotocol
 **Use Case:** Breaking down complex problems into logical steps
 
 ```bash
@@ -456,8 +456,8 @@ Creates beautiful, accessible interfaces using design principles.
   - Complete design systems
 - Ensures WCAG compliance for accessibility
 
-**Model:** Sonnet  
-**MCP:** magic, context7  
+**Model:** Sonnet
+**MCP:** magic, context7
 **Use Case:** Creating design systems and visual interfaces
 
 ```bash
@@ -480,8 +480,8 @@ Your user advocate who focuses on making products intuitive.
   - Wireframes
   - Design specifications based on actual user needs
 
-**Model:** Sonnet  
-**MCP:** context7, sequential-thinking, playwright  
+**Model:** Sonnet
+**MCP:** context7, sequential-thinking, playwright
 **Use Case:** User research, journey mapping, and usability testing
 
 ```bash
@@ -506,8 +506,8 @@ Your React specialist that builds complete, production-ready components.
   - Deployment checklist
 - Follows component-driven development with performance optimization
 
-**Model:** Sonnet  
-**MCP:** magic, context7, playwright  
+**Model:** Sonnet
+**MCP:** magic, context7, playwright
 **Use Case:** Building production-ready React components
 
 ```bash
@@ -523,7 +523,7 @@ iOS specialist covering Swift, SwiftUI, and UIKit.
 - Follows Apple's design guidelines
 - Platform-specific patterns
 
-**Model:** Sonnet  
+**Model:** Sonnet
 **Use Case:** Native iOS application development
 
 ```bash
@@ -538,7 +538,7 @@ Next.js specialist covering server-side rendering, static site generation, API r
 - Understands Next.js-specific patterns and optimizations
 - Best practices for performant applications
 
-**Model:** Sonnet  
+**Model:** Sonnet
 **Use Case:** Next.js applications with SSR, SSG, and routing
 
 ```bash
@@ -559,8 +559,8 @@ Your senior code reviewer that analyzes code for quality, security, performance,
   - Suggestions (nice to have)
 - Educational approach with clear examples of how to fix issues
 
-**Model:** Sonnet  
-**MCP:** context7, sequential-thinking  
+**Model:** Sonnet
+**MCP:** context7, sequential-thinking
 **Use Case:** Comprehensive code review before merging
 
 ```bash
@@ -577,7 +577,7 @@ Provides JavaScript and TypeScript development skills.
 - Frontend patterns
 - Backend Node.js support
 
-**Status:** ENABLED  
+**Status:** ENABLED
 **Provides:** 3 skills (2 frontend, 1 backend)
 
 ```bash
@@ -598,7 +598,7 @@ Covers modern JavaScript features and patterns.
 - Functional programming patterns
 - Helps refactor legacy code to modern standards
 
-**Framework:** ES6+ features and patterns  
+**Framework:** ES6+ features and patterns
 **Use Case:** Implementing modern JavaScript in projects
 
 #### → Skill: typescript-advanced-types
@@ -614,7 +614,7 @@ Masters advanced TypeScript type system.
 - Type-safe applications with sophisticated compile-time guarantees
 - Type inference optimization
 
-**Framework:** Advanced TypeScript type system  
+**Framework:** Advanced TypeScript type system
 **Use Case:** Complex type logic and type safety
 
 #### → Skill: nodejs-backend-patterns
@@ -629,14 +629,14 @@ Covers backend service patterns.
 - Database integration
 - Production-ready backend services
 
-**Framework:** Express, Fastify, API design  
+**Framework:** Express, Fastify, API design
 **Use Case:** Building Node.js backend services
 
 ### frontend-mobile-development@claude-code-workflows
 
 Provides workflow agents specialized in frontend and mobile development patterns and best practices.
 
-**Status:** ENABLED  
+**Status:** ENABLED
 **Use Case:** Frontend and mobile development workflows
 
 ```bash
@@ -650,7 +650,7 @@ Provides three agents specialized in documentation generation and code review wo
 
 - Maintains quality and documentation standards
 
-**Status:** ENABLED  
+**Status:** ENABLED
 **Use Case:** Code documentation and quality workflows
 
 ```bash
@@ -670,7 +670,7 @@ SEO content creation, technical optimization, and writing.
 
 Provides SEO content creation, planning, and auditing agents.
 
-**Status:** ENABLED  
+**Status:** ENABLED
 **Provides:** 3 agents (writer, planner, auditor)
 
 ```bash
@@ -696,8 +696,8 @@ Writes content specifically optimized for search engines while maintaining quali
   - Meta description
   - FAQ section
 
-**Model:** Sonnet  
-**Framework:** E-E-A-T signals  
+**Model:** Sonnet
+**Framework:** E-E-A-T signals
 **Use Case:** SEO-optimized content for search rankings
 
 #### → Agent: seo-content-planner
@@ -716,8 +716,8 @@ Plans comprehensive content strategies.
   - 30-60 day calendars
   - Topic cluster maps showing how content pieces connect
 
-**Model:** Haiku  
-**Framework:** Topic clusters  
+**Model:** Haiku
+**Framework:** Topic clusters
 **Use Case:** Strategic content planning and calendars
 
 #### → Agent: seo-content-auditor
@@ -734,15 +734,15 @@ Analyzes existing content for quality and optimization.
   - Missing trust signals
   - Content depth opportunities
 
-**Model:** Sonnet  
-**Framework:** E-E-A-T analysis  
+**Model:** Sonnet
+**Framework:** E-E-A-T analysis
 **Use Case:** Auditing existing content for improvement
 
 ### seo-technical-optimization@claude-code-workflows
 
 Provides technical SEO optimization agents.
 
-**Status:** ENABLED  
+**Status:** ENABLED
 **Provides:** 4 agents (keywords, meta, snippets, structure)
 
 ```bash
@@ -763,8 +763,8 @@ Analyzes keyword usage and generates semantic variations.
 - Suggests natural keyword integration strategies
 - Creates comprehensive keyword packages
 
-**Model:** Haiku  
-**Framework:** LSI keyword generation  
+**Model:** Haiku
+**Framework:** LSI keyword generation
 **Use Case:** Keyword optimization and semantic analysis
 
 #### → Agent: seo-meta-optimizer
@@ -782,8 +782,8 @@ Creates optimized meta titles, descriptions, and URL structures.
 - Provides 3-5 variations per element for A/B testing
 - Considers mobile truncation
 
-**Model:** Haiku  
-**Framework:** Meta tag optimization  
+**Model:** Haiku
+**Framework:** Meta tag optimization
 **Use Case:** Creating compelling metadata for clicks
 
 #### → Agent: seo-snippet-hunter
@@ -799,8 +799,8 @@ Formats content specifically for featured snippets (position zero).
   - HowTo
 - Question-answer structures for People Also Ask boxes
 
-**Model:** Haiku  
-**Framework:** Featured snippet formatting  
+**Model:** Haiku
+**Framework:** Featured snippet formatting
 **Use Case:** Targeting position zero in search results
 
 #### → Agent: seo-structure-architect
@@ -821,15 +821,15 @@ Analyzes and optimizes content structure and schema markup.
   - Internal linking matrices
 - Ensures search-friendly content organization
 
-**Model:** Haiku  
-**Framework:** Schema markup implementation  
+**Model:** Haiku
+**Framework:** Schema markup implementation
 **Use Case:** Content structure and technical SEO
 
 ### seo-analysis-monitoring@claude-code-workflows
 
 Provides SEO analysis and monitoring agents.
 
-**Status:** ENABLED  
+**Status:** ENABLED
 **Provides:** 3 agents (authority, refresher, cannibalization)
 
 ```bash
@@ -861,8 +861,8 @@ Analyzes content for all E-E-A-T signals.
   - Topical authority maps
 - Critical for Your Money Your Life (YMYL) topics
 
-**Model:** Sonnet  
-**Framework:** E-E-A-T enhancement  
+**Model:** Sonnet
+**Framework:** E-E-A-T enhancement
 **Use Case:** Building authority for YMYL topics
 
 #### → Agent: seo-content-refresher
@@ -883,8 +883,8 @@ Scans content for outdated elements and prioritizes updates.
   - Content expansion opportunities
 - Maintains freshness
 
-**Model:** Haiku  
-**Framework:** Freshness signals  
+**Model:** Haiku
+**Framework:** Freshness signals
 **Use Case:** Updating outdated content
 
 #### → Agent: seo-cannibalization-detector
@@ -902,8 +902,8 @@ Identifies when multiple pages compete for the same keywords.
   - Differentiate
   - Adjust targeting
 
-**Model:** Haiku  
-**Framework:** Keyword conflict analysis  
+**Model:** Haiku
+**Framework:** Keyword conflict analysis
 **Use Case:** Preventing internal keyword competition
 
 ### elements-of-style@superpowers-marketplace
@@ -913,7 +913,7 @@ Single-purpose plugin from the Superpowers marketplace.
 - Provides the writing-clearly-and-concisely skill
 - Brings Strunk & White's timeless writing principles to all your prose
 
-**Status:** ENABLED  
+**Status:** ENABLED
 **Provides:** 1 skill
 
 ```bash
@@ -937,7 +937,7 @@ Applies classic writing principles from Strunk & White to any text.
 - Removes fluff
 - Improves structure
 
-**Framework:** Strunk's writing rules  
+**Framework:** Strunk's writing rules
 **Use Case:** All prose humans will read
 
 ---
@@ -952,7 +952,7 @@ Data analysis, databases, Git workflows, and learning extraction.
 
 Handles data analysis, statistical modeling, and machine learning implementations.
 
-**Model:** Sonnet  
+**Model:** Sonnet
 **Use Case:** Data analysis and machine learning
 
 ```bash
@@ -964,7 +964,7 @@ Handles data analysis, statistical modeling, and machine learning implementation
 
 Provides quantitative analysis and financial modeling expertise.
 
-**Model:** Sonnet  
+**Model:** Sonnet
 **Use Case:** Quantitative and financial analysis
 
 ```bash
@@ -976,7 +976,7 @@ Provides quantitative analysis and financial modeling expertise.
 
 Python specialist for data analysis, scripting, automation, and Python-specific best practices.
 
-**Model:** Sonnet  
+**Model:** Sonnet
 **Use Case:** Python development and data analysis
 
 ```bash
@@ -988,7 +988,7 @@ Python specialist for data analysis, scripting, automation, and Python-specific 
 
 Manages database administration, setup, and ongoing maintenance.
 
-**Model:** Sonnet  
+**Model:** Sonnet
 **Use Case:** Database setup, configuration, and management
 
 ```bash
@@ -1000,7 +1000,7 @@ Manages database administration, setup, and ongoing maintenance.
 
 Optimizes database queries and overall database performance.
 
-**Model:** Sonnet  
+**Model:** Sonnet
 **Use Case:** Query optimization and database performance
 
 ```bash
@@ -1015,7 +1015,7 @@ Specializes in integrating payment systems.
 - Stripe, PayPal, and other payment processors
 - Handles payment workflows and security considerations
 
-**Model:** Sonnet  
+**Model:** Sonnet
 **Use Case:** Implementing payment systems
 
 ```bash
@@ -1062,7 +1062,7 @@ Extracts clean article content from URLs.
   - Articles
   - Tutorials
 
-**Framework:** Clean content extraction  
+**Framework:** Clean content extraction
 **Triggers:** User provides article URL
 
 ```bash
@@ -1083,7 +1083,7 @@ Transforms learning content into actionable implementation plans.
   - Articles
   - Tutorials
 
-**Framework:** Ship-Learn-Next methodology  
+**Framework:** Ship-Learn-Next methodology
 **Use Case:** Turning learning into action
 
 ```bash
@@ -1103,8 +1103,8 @@ Automatically detects content type, extracts content, and creates action plan.
   - Articles
   - PDFs
 
-**Framework:** Unified extraction + planning  
-**Triggers:** 
+**Framework:** Unified extraction + planning
+**Triggers:**
 - `tapestry <URL>`
 - `weave <URL>`
 - `make this actionable <URL>`
@@ -1123,7 +1123,7 @@ Downloads transcripts and captions from YouTube videos.
 - Summarization
 - Content extraction
 
-**Framework:** YouTube transcript download  
+**Framework:** YouTube transcript download
 **Triggers:** User provides YouTube URL
 
 ```bash
