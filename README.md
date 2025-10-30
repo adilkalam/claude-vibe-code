@@ -349,7 +349,7 @@ We separate generation (agents code) from verification (separate agent checks). 
   │     Engineer     │ │     Engineer     │ │     Engineer     │
   └────────┬─────────┘ └────────┬─────────┘ └────────┬─────────┘
            │                    │                    │
-           │  (Agents mark assumptions with tags)   │
+           │  (Agents mark assumptions with tags)    │
            │                    │                    │
            ▼                    ▼                    ▼
 ┌──────────────────────────────────────────────────────────────┐
@@ -362,7 +362,7 @@ We separate generation (agents code) from verification (separate agent checks). 
                                ▼
                 ┌──────────────────────────────────────┐
                 │        Verification Agent            │
-                │    (grep/ls/Read - SEARCH mode)     │
+                │    (grep/ls/Read - SEARCH mode)      │
                 └──────────────────┬───────────────────┘
                                    │
                                    │
@@ -386,7 +386,7 @@ We separate generation (agents code) from verification (separate agent checks). 
                      │                         │
                      ▼                         ▼
             ┌──────────────────┐      ┌──────────────────┐
-            │    🚫 BLOCK      │      │     ✅ PASS      │
+            │     BLOCK        │      │        PASS      │
             │  Report failures │      │  Continue to     │
             │                  │      │ quality-validator│
             └────────┬─────────┘      └────────┬─────────┘
