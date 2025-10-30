@@ -27,7 +27,7 @@
 
 > **🚧 /ORCA** 
 > 
-An intelligent auto-orchestration system for Claude Code that will detect your project, understand your intent, and dispatch the right specialists automatically - with **Response Awareness verification** to prevent false completions.
+An intelligent auto-orchestration system for Claude Code AI that will detect your project, understand your intent, and dispatch the right specialists automatically - with **Response Awareness verification** to prevent false completions.
 
 ---
 
